@@ -21,7 +21,7 @@ public class Main {
         System.out.println(a.returnMin(new int[] {1, 2, 3}));
         System.out.println(a.returnMin(new int[] {1, 2, 7, 3}));
         System.out.println(a.returnMin(new int[] {9, 2, 12, 6, 2, 21}));
-        System.out.println(new String[] {"Hello,", "world", "!"});
+        System.out.println(a.returnMinString(new String[] {"Hello,", "world", "!"}));
 
     }
 }
