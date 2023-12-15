@@ -39,4 +39,29 @@ public class Algorithms {
         }
         return min;
     }
+    public int largestArrayDifference(int[] a, int[] b) {
+        int maximum = Integer.MIN_VALUE;
+        for (int i : a) {
+            for (int j : b) {
+                if (Math.abs(i-j) > maximum) maximum = Math.abs(i-j);
+            }
+        }
+        return maximum;
+    }
+    public double meanArray(double[] a) {
+        double result = 0;
+        for (double i : a) {
+            result += i;
+        }
+        return result/(a.length);
+    }
+    public int[] reverseOrder(int[] a) {
+        int temp;
+        for (int i = 0; i < (a.length/2); i++) {
+            temp = a[i];
+            a[i] = a[a.length-i-1];
+            a[a.length-i-1] = temp;
+        }
+        return a;
+    }
 }
