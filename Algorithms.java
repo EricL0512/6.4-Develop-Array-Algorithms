@@ -64,4 +64,13 @@ public class Algorithms {
         }
         return a;
     }
+    public boolean consecutiveValues(int[] a) {
+        for(int i = 0;i < a.length-1; i++) {
+            if (a[i] == a[i+1]) return true;
+        }
+        return false;
+    }
+    public int firstNegative(int[] a) {
+
+    }
 }

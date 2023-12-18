@@ -45,6 +45,11 @@ public class Main {
         printList(a.reverseOrder(new int[] {1, 2, 3}));
         printList(a.reverseOrder(new int[] {10, 9, 8, 7, 6}));
         printList(a.reverseOrder(new int[] {1, 3, 5, 7, 9}));
-
+        System.out.println("\nConsecutive Values:\n");
+        System.out.println(a.consecutiveValues(new int[] {1, 2, 3, 3, 4}));
+        System.out.println(a.consecutiveValues(new int[] {1, 2, 3, 4, 5}));
+        System.out.println(a.consecutiveValues(new int[] {1, 2, 3, 2, 1}));
+        System.out.println("\nFirst Negative Value:\n");
+        System.out.println();
     }
 }
