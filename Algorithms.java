@@ -71,6 +71,34 @@ public class Algorithms {
         return false;
     }
     public int firstNegative(int[] a) {
-
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] < 0) return i;
+        }
+        return -1;
+    }
+    public boolean sameValues(int[] a) {
+        for (int i = 0; i < a.length; i++) {
+            for (int j = i+1; j < a.length; j++) {
+                if (a[i] == a[j]) return true;
+            }
+        }
+        return false;
+    }
+    public int longestStreak(int[] a, int b) {
+        int current = 0;
+        int max = 0;
+        for (int i : a) {
+            if (i == b) current++;
+            else current = 0;
+            if (current > max) max = current;
+        }
+        return max;
+    }
+    public String lastAlphabetic(String[] str) {
+        String result = "";
+        for (String s : str) {
+            if (s.compareTo(result) > 0) result = s;
+        }
+        return result;
     }
 }

@@ -50,6 +50,19 @@ public class Main {
         System.out.println(a.consecutiveValues(new int[] {1, 2, 3, 4, 5}));
         System.out.println(a.consecutiveValues(new int[] {1, 2, 3, 2, 1}));
         System.out.println("\nFirst Negative Value:\n");
-        System.out.println();
+        System.out.println(a.firstNegative(new int[] {1, 0, -1}));
+        System.out.println(a.firstNegative(new int[] {10, 9, -1, -2}));
+        System.out.println(a.firstNegative(new int[] {111, 10, 121}));
+        System.out.println("\nSame Values\n");
+        System.out.println(a.sameValues(new int[] {1, 2, 3, 4, 0, 0, 1}));
+        System.out.println(a.sameValues(new int[] {1, 2, 3, 2}));
+        System.out.println(a.sameValues(new int[] {9, 8, 7, 6, 5}));
+        System.out.println("\nLongest Streak");
+        System.out.println(a.longestStreak(new int[] {1, 2, 1, 1, 1}, 1));
+        System.out.println(a.longestStreak(new int[] {1, 2, 3, 3, 0}, 3));
+        System.out.println(a.longestStreak(new int[] {1, 2, 3, 4, 5}, 6));
+        System.out.println(a.lastAlphabetic(new String[] {"zebra", "alpha"}));
+        System.out.println(a.lastAlphabetic(new String[] {"apple", "banana", "pineapple"}));
+        System.out.println(a.lastAlphabetic(new String[] {"zillow", "airbnb", "trivago"}));
     }
 }
